@@ -1,0 +1,12 @@
+[project]
+name = "superwhisper-claude"
+version = "0.1.0"
+description = "Dicta con Superwhisper, responde Claude por voz"
+requires-python = ">=3.10"
+dependencies = ["anthropic>=1.0", "edge-tts>=7.0"]
+
+[project.scripts]
+claude-voz = "claude_voz:main"
+
+[tool.uv]
+package = false
