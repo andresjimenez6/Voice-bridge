@@ -196,14 +196,6 @@ class Conversacion:
                     pendiente = partes[-1]
                 final = stream.get_final_message()
         except anthropic.AuthenticationError:
-            print()
-            log("Clave de API no válida. Revisa ANTHROPIC_API_KEY.")
-            self.voz.decir("Mi clave de acceso no es válida.")
-            return
-        except anthropic.RateLimitError:
-            print()
-            log("Límite de uso alcanzado; espera un momento.")
-            self.voz.decir("He llegado al límite de uso, espera un momento.")
             return
         except anthropic.APIStatusError as e:
             print()
