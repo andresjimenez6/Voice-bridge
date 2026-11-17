@@ -1,6 +1,6 @@
 # Superwhisper → Claude → voz
 
-Dictas con Superwhisper (tu atajo `Ctrl+Alt+Space`), el programa detecta el dictado
+Dictas con Superwhisper, el programa detecta el dictado
 nuevo, se lo envía a Claude (`claude-opus-5-5`) y lee la respuesta en voz alta,
 frase a frase mientras llega.
 
